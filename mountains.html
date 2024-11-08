@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Information</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/mountainData.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Explore Mountains</h1>
+    </header>
+    <section>
+        <label for="mountainSelect">Select a Mountain:</label>
+        <select id="mountainSelect" onchange="displayMountainInfo()">
+            <option value="">Choose a mountain</option>
+        </select>
+        <div id="mountainInfo"></div>
+    </section>
+    
+    <script src="scripts/mountains.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Adventures</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="national-parks.html">Find Park</a></li>
+            <li><a href="mountains.html">Find Mountain</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Outdoor Adventures</h1>
+        <p>Discover Stunning National Parks and Majestic Mountains</p>
+        <div class="carousel">
+            <div class="carousel-image"><img src="images/mountain1.jpg" alt="Mountain 1"></div>
+            <div class="carousel-image"><img src="images/mountain2.jpg" alt="Mountain 2"></div>
+            <div class="carousel-image"><img src="images/park1.jpg" alt="National Park 1"></div>
+            <div class="carousel-image"><img src="images/mountain3.jpg" alt="National Park 2"></div>
+        </div>
+    </header>
+
+    <section class="introduction">
+        <h2>Welcome to Outdoor Adventures</h2>
+        <p>Your gateway to discovering the wonders of nature’s most beautiful landscapes. Whether you're drawn to the rugged peaks of majestic mountains or the serene beauty of national parks, we have the resources to guide your next adventure. Explore our curated listings of stunning parks and towering mountains, each offering unique experiences and breathtaking views. From hiking trails and climbing challenges to serene escapes in untouched wilderness, Outdoor Adventures helps you find the perfect destination to reconnect with nature and fuel your sense of exploration. Dive in and start planning your adventure today!</p>
+    </section>
+
+    <section class="explore-options">
+        <div class="explore-option">
+            <img src="images/park33.jpg" alt="Find Park">
+            <button onclick="window.location.href='nationalParks.html'">Find Park</button>
+        </div>
+        <div class="explore-option">
+            <img src="images/mount.jpg" alt="Find Mountain">
+            <button onclick="window.location.href='mountains.html'">Find Mountain</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Outdoor Adventures. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll(".carousel-image");
+
+        images.forEach((image, index) => {
+            image.style.display = index === 0 ? "block" : "none";
+        });
+
+        setInterval(() => {
+            images[currentImageIndex].style.display = "none";
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].style.display = "block";
+        }, 3000);
+    </script>
+</body>
+</html>

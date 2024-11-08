@@ -1,4 +1,4 @@
-const locationsArray = [
+const locationData = [
     "Alabama",
     "Alaska",
     "American Samoa",
@@ -54,4 +54,4 @@ const locationsArray = [
     "West Virginia",
     "Wisconsin",
     "Wyoming"
-]
+];

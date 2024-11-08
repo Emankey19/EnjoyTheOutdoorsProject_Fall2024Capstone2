@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+  
+    <script src="scripts/locationData.js"></script>
+    <script src="scripts/parkTypeData.js"></script>
+    <script src="scripts/nationalParkData.js"></script>
+    
+    <script src="scripts/parks.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Find a National Park</h1>
+    </header>
+    <section>
+        <label for="locationSelect">Search by Location:</label>
+        <select id="locationSelect">
+            <option value="">Select a location</option>
+        </select>
+
+        <label for="parkTypeSelect">Search by Park Type:</label>
+        <select id="parkTypeSelect">
+            <option value="">Select a park type</option>
+        </select>
+
+        <button onclick="searchParks()">Search</button>
+        <button onclick="viewAllParks()">View All Parks</button>
+
+        <div id="results"></div>
+    </section>
+</body>
+</html>
