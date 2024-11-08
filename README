@@ -8,10 +8,10 @@ An interactive website for discovering and exploring outdoor activities, focusin
 - **Newsletter Signup:** Users can subscribe for park updates.
 
 ## Technologies Used
-HTML for structure
-CSS for styling
-JavaScript for dynamic content
-API: Sunrise-Sunset API for real-time data
+- **HTML** for structure
+- **CSS** for styling
+- **JavaScript** for dynamic content
+- **API:** Sunrise-Sunset API for real-time data
 
 ## Screenshots
 
