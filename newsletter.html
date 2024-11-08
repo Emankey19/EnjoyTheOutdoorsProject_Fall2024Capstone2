@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Signup</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/locationData.js"></script> <!-- Include location data file -->
+    <script defer src="scripts/newletter.js"></script> <!-- Custom script for populating dropdown -->
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="national-parks.html">Find Park</a></li>
+            <li><a href="mountains.html">Find Mountain</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>Stay Connected with Our Newsletter</h1>
         <p>Get the latest updates, travel tips, and park news straight to your inbox.</p>
@@ -24,23 +35,21 @@
 
             <label for="state">State:</label>
             <select id="state" name="state" required>
-                <!-- Populate with state options -->
-                <option value="Alabama">Alabama</option>
-                <option value="Alaska">Alaska</option>
-                <!-- Add other states -->
+                <option value="">Select a state</option>
+               
             </select>
 
             <button type="submit">Subscribe</button>
         </form>
     </section>
-</body>
-<footer>
-    <p>&copy; 2024 Outdoor Adventures. All rights reserved.</p>
-    <p>Follow us on:
-        <a href="#">Facebook</a> | 
-        <a href="#">Twitter</a> | 
-        <a href="#">Instagram</a>
-    </p>
-</footer>
 
+    <footer>
+        <p>&copy; 2024 Outdoor Adventures. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
 </html>
