@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mountain Information</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="scripts/mountainData.js"></script>
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="national-parks.html">Find Park</a></li>
+                <li><a href="mountains.html">Find Mountain</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+        
         <h1>Explore Mountains</h1>
     </header>
-    <section>
+    <section class="search-section">
         <label for="mountainSelect">Select a Mountain:</label>
         <select id="mountainSelect" onchange="displayMountainInfo()">
             <option value="">Choose a mountain</option>

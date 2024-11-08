@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Stay Connected with Our Newsletter</h1>
+        <p>Get the latest updates, travel tips, and park news straight to your inbox.</p>
+    </header>
+    <section class="search-section">
+        <form action="your-server-endpoint" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <!-- Populate with state options -->
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <!-- Add other states -->
+            </select>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+</body>
+</html>

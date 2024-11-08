@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Parks Search</title>
-    <link rel="stylesheet" href="css/styles.css">
-  
+    <link rel="stylesheet" href="css/style.css">
+    
     <script src="scripts/locationData.js"></script>
     <script src="scripts/parkTypeData.js"></script>
     <script src="scripts/nationalParkData.js"></script>
-    
-    <script src="scripts/parks.js" defer></script> 
+    <script src="scripts/parks.js" defer></script>
 </head>
 <body>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="national-parks.html">Find Park</a></li>
+            <li><a href="mountains.html">Find Mountain</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+    </nav>
+
+   
     <header>
         <h1>Find a National Park</h1>
     </header>
-    <section>
+
+    <section class="search-section">
         <label for="locationSelect">Search by Location:</label>
         <select id="locationSelect">
             <option value="">Select a location</option>
